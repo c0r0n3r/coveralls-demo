@@ -8,4 +8,4 @@ install: "pip install -r requirements.txt"
 # command to run tests
 script: coverage run -m test
 after_success:
-  - coveralls
+  - COVERALLS_REPO_TOKEN="$COVERALLS_TOKEN" coveralls
